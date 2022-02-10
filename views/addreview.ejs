@@ -1,0 +1,16 @@
+<%- include("partials/header")-%>
+<a class="nav-link" href="/product"><button class="nav-button buttonreview" style="margin-left:109rem;margin-top:2.5rem;">PRODUCT</button></a>
+<div style="width:25%;border:1px solid white;margin-left:37%;">
+<form class="input-div" action="/addreview" method="POST">
+    <input style="margin-top:1.5rem;" type="text" name="name" placeholder="Enter Your Name" required />
+
+    <textarea name="review"  rows="10" cols="40" placeholder="Write a Review About Shopping App"  style="background: transparent;border:1px solid rgb(252,252,252,0.4);background-color:rgb(252,252,252,0.2);margin-left:3.8rem" required>
+       Write A Review About Our Shopping App                       Clear This Field Then Write
+    </textarea><br>
+    <input type="text" name="place" style="margin-top:0.5rem;" placeholder="Enter Your City" required />
+   
+    <button type="submit" class="shop-now" style="margin-left:24%;margin-top:0;margin-bottom:1rem;"><b>Add Review</b></button><br>
+      
+    </form>
+</div>
+<%- include("partials/footer")-%>

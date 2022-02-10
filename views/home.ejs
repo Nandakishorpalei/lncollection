@@ -1,0 +1,147 @@
+<%- include("partials/header"); -%>
+<section id="home" >
+<div class="header-buttons">
+<ul class="nav"> 
+<li class="nav-item">
+  <a class="nav-link active" href="/product"><button class="nav-button buttonhome">SHOP NOW</button> </a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#home"><button class="nav-button buttonproduct">HOME</button></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="#product"><button class="nav-button buttonreview">PRODUCT</button></a>
+</li>
+<li class="nav-item">
+  <a class="nav-link " href="#testimonials"><button class="nav-button buttonabout">ABOUT</button></a>
+</li>
+</ul>
+</div>
+
+
+ 
+<h1 class="homepage-caption caption1">MIX & MATCH PERFUMES</h1>
+<h1 class="homepage-caption caption2">LIFE IS FULL OF BEAUTY</h1>
+<img class="homepage-pic1" src="home-pagepic.jpg" alt="homepage-pic1" />  
+<img class="homepage-pic2" src="home-page-picc (2).jpg" alt="homepage-pic" />
+
+</section>
+<section class="white-section" id="features">
+    <div class="row">
+    <div class=" check-circle col-lg-4 ">
+<div class="icon">
+
+
+  <i class="fas fa-check-circle fa-2x"></i></div>
+
+      <h3><b>Assured product</b></h3>
+      <h4 class="features-text">Easy & reliable to use</h4>
+    </div>
+
+
+    <div class=" bullseye col-lg-4">
+<div class="icon">
+        
+    <i class="fas fa-heart fa-2x"></i></div>
+      <h3><b>Look good with us</b></h3>
+      <h4 class="features-text">Beauty is whatever gives joy</h4>
+    </div>
+
+  <div class="heart col-lg-4">
+<div class="icon">
+      <i class="fas fa-bullseye fa-2x "></i></div>
+
+    <h3 class="Guaranteed"><b>Get what you eye</b></h3>
+    <h4 class="features-text">Experience the difference.</h4>
+  </div>
+    </div>
+
+
+
+  </section>
+
+<section id="product" >
+<div>
+    <img class="product-pic product-pic-1" style="margin-left: -1rem;" src="lotion (2).jpeg" alt="product-pic-1" />
+    <img class="product-pic product-pic-2" src="perfume (2).jpg" alt="product-pic-2" />
+    <img class="product-pic product-pic-3" src="blossom (2).jpeg" alt="product-pic-3" />
+</div>
+
+<a class="nav-link" href="/signup"><button class="shop-now">SHOP NOW</button></a>
+</section>
+
+<section id="review">
+    <div class="review">
+      <table><tr>
+      <% allreview.forEach(element=> { %>
+       <td class="cards">
+              <h3><b><%=element.userName%></b></h3> 
+              <h4><b><%=element.place%></b></h4> 
+           
+              <p style="position:static;height:27rem;"><%=element.review%></p>
+            </td>
+     <% }) %>
+        
+    </tr></table>
+</div>
+</section>
+
+
+        <section class="color-section" id="testimonials">
+          <h2>Expect nothing less than perfect</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-pause="hover" >
+            <div class="carousel-inner">
+              <div class="carousel-item active home-carousel-item">
+                
+              <img class="testimonials-image" src="nkp(1).jpg" alt="NKP">
+              <h3>Nanda kishor palei</h3>
+              <h4> Odisha</h4>
+              <a href="https://www.facebook.com/arman.rahul.52/"><span style="font-size: 4rem; color: rgb(64, 64, 255);">
+                <i class="fab fa-facebook press-icon"></i>
+              </span></a>
+              <a href="https://www.instagram.com/nkp_45_/"><span style="font-size: 4rem; color: rgb(255, 47, 47);">
+                <i class="fab fa-instagram press-icon"></i> 
+              </span></a>
+              <a href="https://twitter.com/nandapalei/"><span style="font-size: 4rem; color: rgb(38, 0, 255);">
+                <i class="fab fa-twitter press-icon"></i>
+              </span></a>
+              <a href="https://github.com/Nandakishorpalei"><span style="font-size: 4rem; color: rgb(0, 0, 0);">
+                <i class="fab fa-github press-icon"></i>
+              </span></a>
+              <h4 style="color:black;">For Support Mail Us- lncollection.ltd@gmail.com</h4>
+              </div>
+              <div class="carousel-item home-carousel-item">
+                
+             <img class="testimonials-image" src="lipsa (2).jpg" alt="LMJ">
+             <h3>Lipsamayee jena</h3>
+             <h4> Odisha</h4>
+             <a href="https://www.facebook.com/lucky.lipsa.18"><span style="font-size: 4rem; color: rgb(64, 64, 255);">
+              <i class="fab fa-facebook press-icon"></i>
+            </span></a>
+            <a href="https://www.instagram.com/lipsamayee_jena/"><span style="font-size: 4rem; color: rgb(255, 47, 47);">
+              <i class="fab fa-instagram press-icon"></i> 
+            </span></a>
+            <a href="https://twitter.com/JenaLipsamayee"><span style="font-size: 4rem; color: rgb(38, 0, 255);">
+              <i class="fab fa-twitter press-icon"></i>
+            </span></a>
+            <a href="https://github.com/lipsa100"><span style="font-size: 4rem; color: rgb(0, 0, 0);">
+              <i class="fab fa-github press-icon"></i>
+            </span></a>
+            <h4 style="color:black;">For Support Mail Us- lncollection.ltd@gmail.com</h4>
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            
+          </div>
+        
+          </section>
+
+
+<%- include("partials/footer"); -%>

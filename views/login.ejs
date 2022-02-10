@@ -1,0 +1,61 @@
+<%- include("partials/header")-%>
+<a href="/"><button class="skip-now">skip now</button></a>
+<div id="sign-in">
+    
+    <table >
+        <tr>
+            <td class="sign-in-form-td">
+
+    <div class="sign-in-form">
+        
+<h3 >Welcome back</h3>
+<h1><b>Log in to your account</b></h1>
+<form class="input-div" action="/login" method="POST">
+<input style="margin-top:1.5rem;" type="email" name="username" placeholder="Enter your E-mail" required />
+<input type="password" name="password" placeholder="Enter your password" required />
+
+<button type="submit"><b>Sign in</b></button><br>
+
+</form>
+
+      <a class="btn btn-block btn-social btn-google" href="/auth/google" role="button" style="margin-top:0.3rem;width:25rem;background-color:#ff1100;color:white;">
+        <i class="fab fa-google" style="color:white;"></i>
+        Sign In with Google
+      </a>
+    
+  
+      <a class="btn btn-block btn-social btn-facebook" href="/auth/facebook" role="button" style="margin-top:0.3rem;width:25rem;background-color:blue;color:white;">
+        <i class="fab fa-facebook" style="color:white;"></i>
+        Sign In with Facebook
+      </a><br>
+    
+<a class="sign-up-button" href="/signup">Create new account ?</a>
+</div>
+</td>
+<td class="sign-in-design-td">
+<div class="sign-in-design">
+      <section class="color-section" id="testimonial">
+            
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-pause="hover" >
+            <div class="carousel-inner">
+              <div class="carousel-item active ">
+                <img src="deperfume.jpeg"  class="d-block sign-in-carousel" alt="design-pic-1">
+              </div>
+              <div class="carousel-item">
+                <img src="perfume1.jpeg"  class="d-block  sign-in-carousel" alt="design-pic-2">
+              </div>
+              <div class="carousel-item">
+                <img src="homepage-pic2.jpeg"  class="d-block  sign-in-carousel" alt="design-pic-2">
+              </div>
+              
+            </div>
+        
+          </div>
+        
+          </section>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<%- include("partials/footer")-%>

@@ -1,0 +1,40 @@
+<%- include("partials/header")-%>
+<a href="/product"><button class="success-productbutton" >Products</button></a>
+<div class="success-box">
+  <h1 style="color:#ffffff;margin-left:25%;">Order placed </h1>
+  <h3 style="color:#ffffff;margin-left:25%;">you have ordered </h3>
+  <div id="success" >
+    <table id="t01" class="borderdesign" style="width:60%">
+      <tr>
+        <th class="borderdesign borderdesign-td"><h2>Product</h2></th>
+        <th class="borderdesign borderdesign-td"><h2>Name</h2></th> 
+        <th class="borderdesign borderdesign-td"><h2>Price</h2></th>
+        <th class="borderdesign borderdesign-td" colspan="2"><h2 >Shipping Address</h2></th>
+
+      </tr>
+      <tr>
+        <td class="borderdesign borderdesign-td"><img style="height:25rem;width:21rem;background:transparent" src="<%=productList[Payment.transactions[0].item_list.items[0].sku].img%>" alt="ordered-product" /></td>
+        <td class="borderdesign borderdesign-td"><h2><%=Payment.transactions[0].item_list.items[0].name%></h2></td>
+        <td class="borderdesign borderdesign-td"><h2>$<%=Payment.transactions[0].item_list.items[0].price%></h2></td>
+        <td class="borderdesign borderdesign-td">
+          <div class="shipping">
+            
+            <h4><%=Payment.payer.payer_info.shipping_address.recipient_name%></h4><br>
+            <h4><%=Payment.transactions[0].payee.email%></h4>
+            <h4><%=Payment.payer.payer_info.shipping_address.line1%></h4><br>
+            <h4><%=Payment.payer.payer_info.shipping_address.city%></h4><br>
+            <h4><%=Payment.payer.payer_info.shipping_address.state%></h4><br>
+            <h4><%=Payment.payer.payer_info.shipping_address.postal_code%></h4><br>
+            <h4><%=Payment.payer.payer_info.shipping_address.country_code%></h4><br>
+           </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+ 
+  
+
+  
+</div>
+
+<%- include("partials/footer")-%>

@@ -1,0 +1,33 @@
+ <%-include("partials/header") -%>
+ <a href="/product"><button class="success-productbutton" >Products</button></a>
+<a href="/"><button class="success-productbutton" style="margin-left:123rem;">home</button></a>
+<h1 class="shipping-address">Your Orders</h1>
+
+<div id="success" style="margin-left:24%;" >
+    <table id="t01" class="borderdesign" style="width:60%">
+<tr>
+    <th class="borderdesign borderdesign-td"><h2>Product</h2></th>
+    <th class="borderdesign borderdesign-td"><h2>Brand</h2></th> 
+    <th class="borderdesign borderdesign-td"><h2>Name</h2></th>
+    <th class="borderdesign borderdesign-td"><h2 >Price</h2></th>
+    <th class="borderdesign borderdesign-td"><h2 >Order Date</h2></th>
+
+  </tr>
+<%allProduct.forEach(element=>{%>
+    
+    <tr>
+ <td class="borderdesign borderdesign-td"><img style="height:18rem;width:15rem;background:transparent" src="<%=element.img%>" alt="ordered-product" /></td>
+  <td class="borderdesign borderdesign-td"><h2><%=element.brand%></h2></td>
+  <td class="borderdesign borderdesign-td"><h2><%=element.name%></h2></td>
+  <td class="borderdesign borderdesign-td"><h2>₹<%=element.price%></h2></td>
+  <td class="borderdesign borderdesign-td"><h2><%=element.date%></h2></td>
+   </tr>
+    
+  
+<%})%>
+</table>
+     
+    
+
+<%-include("partials/footer") -%> 
+

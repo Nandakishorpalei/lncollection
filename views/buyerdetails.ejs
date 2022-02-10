@@ -1,0 +1,26 @@
+<%-include("partials/header") -%>
+
+<h1 class="shipping-address">Shipping Address</h1>
+<form action="/razorpay" method="GET"> 
+   <div  class="buyerdetails-form">
+    <table><tr><input class="input-box-content" id="buyerName" type="text" name="buyerName" value="" 
+       placeholder="Rohit Sharma"  size="50" required > </tr><br>
+      <tr><input class="input-box-content" type="text" name="buyerAddress" value="" 
+         placeholder="Wankhede stadium square"  size="100" required > </tr><br>
+      <tr><input class="input-box-content" type="text" name="buyerTown" value="" 
+         placeholder="Mumbai"  size="100" required > </tr><br>
+         <tr><input class="input-box-content" type="text" name="buyerState" value="" 
+            placeholder="Maharastra"  size="100" required > </tr><br>
+      <tr><input class="input-box-content" type="tel" id="phone" name="buyerPin" value="" 
+         placeholder="400001" pattern="[0-9]{6}" required></tr><br>
+         <p class="checkoutthrough"><b>Checkout through</b></p>
+      </div>
+      <button type="submit" style="background:transparent;border:0;box-shadow: 0 0 ;" ><img class="razorpay-button" src="https://dabuttonfactory.com/button.png?t=Razorpay&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=46&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" alt="Razorpay" /></button> 
+  </form>
+           <form action="/pay" method="POST">
+            <input class="input-box-content buyerphone" type="tel" id="phone" name="buyerphone" value="" 
+         placeholder="6370123456" pattern="[0-9]{10}" required></tr>
+                  <button style="background:transparent;box-shadow: 0 0 ;border:0;height:35px;padding-top: -9.2rem;position:absolute" >
+                    <img type="submit" class="paypal-button" src="https://dabuttonfactory.com/button.png?t=Paypal&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=64&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" style="margin-top:  -4.2rem;"  /></button>
+                  </form>
+<%-include("partials/footer") -%>

@@ -1,0 +1,207 @@
+
+    <%- include("partials/header")-%>
+    <nav id="productnavbar" class="navbar navbar-light  product-navbar"  style="height:10.2rem;width:79.6%;margin-left:20rem;padding-top:0;margin-top:-1rem;">
+      <a class="navbar-brand" href="#">
+      </a>
+    </nav>
+    
+        <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+          <input type="hidden" name="cmd" value="_s-xclick">
+          <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----">
+          <input type="image" class="shopping-cart-img" src="shopping-cart.png"  border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+          <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+          </form>
+          
+       
+    <a href="/"><button class="nav-button" style="margin-left:97rem;margin-top:2rem;position:fixed;z-index:300;">HOME</button></a>
+    <a href="/logout" ><button class="nav-button" style="margin-left:105rem;margin-top:2rem;position:fixed;z-index:300;">LOG OUT</button></a>
+    <a href="/vieworder" ><button class="nav-button" style="margin-left:115rem;margin-top:2rem;position:fixed;z-index:300;">ORDERS</button></a>
+    <h2 class="product-welcome" style="display:none;">Welcome </h2>
+    <div class="product-option">
+      <h2 class="options">OPTIONS</h2><br>
+      <h3><a href="/man"><img class="menemoji" src="menemoji.png" alt="men" style="height:10rem;width:10rem;"></a></h3><br>
+      <h3><a href="/woman"><img  class="menemoji" src="womanemoji.png" alt="women" 
+        style="height:7.5rem;width:7.5rem;margin-left:1rem;"></a></h3><br>
+      <h3><a style="color:white; border:2px solid black;border-radius:5px;" href="/addreview"><b>ADD REVIEW</b></a></h3><br>
+    </div>
+      
+    <div class="row">
+        <div class="product-container" >
+      <div style="position: absolute;margin-left:4%;margin-top:.5%;border:1px #e9dcde solid;
+      border-radius: 1rem;width: 20.4%;height:53.2rem;  border-top-right-radius: 1rem;border-top-left-radius: 1rem;">
+          <img class="product3-img" src="perfumes\men3.jpg"  alt="product-img">  
+          <table>
+            <tr><td><h2 class="column3-h2" style="text-align:left;font-family:'Mate SC', serif">Fogg</h2></td>
+              <td><h4 style="margin-top:.7rem;margin-left:1rem;font-family:'Mate SC', serif">(100ml)</h4></td>
+            </tr>
+            
+            <tr>
+            <td><h3 class="column3-h3"  style="text-align:left;font-family:'Times New Roman', Times, serif">Impressio Eau De perfume</h3></td>
+            <td><h3 class="column3-h3"  style="margin-left:1rem;font-size:2.3rem;margin-top:-.7rem; ">₹499</h3></td>
+         </tr></table>
+          
+         <table class="buy-now-table"><tr><td>
+      
+          <form action="/buyerdetails" method="GET">
+            <button class="column3-button" style="background:transparent;border:0;box-shadow: 0 0 ;" name="productID" value="2" ><img class="buynow-button" src="https://dabuttonfactory.com/button.png?t=Buy+now&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=50&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" alt="Buy Now" /></button> 
+          </form>
+      
+           
+      
+            </td>
+            </tr></table>
+             <tr> 
+              <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="G8PQ8UB6NUKV4">
+                <table>
+                  <tr><td><input class="product-volume" type="hidden"  name="on0" ></td></tr><tr><td><select style="display:none" name="os0">
+                  <option value="Option 1">Option 1 &#8377;499.00 INR</option>
+                  
+                </select> </td></tr>
+                </table>
+                <input type="hidden" name="currency_code" value="INR">
+                <input type="image" style="margin-top:-4.3rem;border:0;" class="add-to-cart-button" src="https://dabuttonfactory.com/button.png?t=Add+to+Cart&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=32&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                </form>
+
+            <p class="column3-p" style="font-size:1.3rem;color:white;margin-left:.4rem;font-family:'Times New Roman', Times, serif">It is very popular among younger hearts for the classic, elegant and timeless appeal of these exquisite fragrances. A Non- allergenic Fragrance that doesn’t affects your skin.</p>
+          </div>
+
+
+        <div style="position: absolute;margin-left:28%;margin-top:.5%; border:1px #e9dcde solid;
+        border-radius: 1rem;width: 20.3%;height:53.2rem; border-top-right-radius: 1rem;border-top-left-radius: 1rem;">
+            <img class="product3-img" src="perfumes/women10.jpg"  alt="product-img">  
+          <table>
+            <tr><td><h2 class="column3-h2" style="text-align:left;font-family:'Mate SC', serif">skinn</h2></td>
+              <td><h4 style="margin-top:.7rem;margin-left:1rem;text-align:left;font-family:'Mate SC', serif">(50ml)</h4></td>
+            </tr>
+            
+            <tr>
+            <td><h3 class="column3-h3"  style="text-align:left;font-family:'Times New Roman', Times, serif">Titan Sheer Perfume</h3></td>
+            <td><h3 class="column3-h3"  style="margin-left:1rem;font-size:2.3rem;margin-top:-.7rem; ">₹1499</h3></td>
+         </tr></table>
+          
+         <table class="buy-now-table"><tr><td>
+      
+          <form action="/buyerdetails" method="GET">
+            <button class="column3-button" style="background:transparent;border:0;box-shadow: 0 0 ;" name="productID" value="40" ><img class="buynow-button" src="https://dabuttonfactory.com/button.png?t=Buy+now&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=50&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" alt="Buy Now" /></button> 
+          </form>
+      
+          
+      
+            </td>
+            </tr></table>
+             <tr> <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="QHUY6NH3852VG">
+              <table>
+                <tr><td><input class="product-volume" type="hidden"  name="on0" ></td></tr><tr><td><select style="display:none" name="os0">
+                <option value="Option 1">Option 1 &#8377;1,499.00 INR</option>
+           
+              </select> </td></tr>
+              </table>
+              <input type="hidden" name="currency_code" value="INR">
+              <input type="image" style="margin-top:-4.3rem;border:0;" class="add-to-cart-button" src="https://dabuttonfactory.com/button.png?t=Add+to+Cart&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=32&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+              </form>
+              
+              
+      
+            <p class="column3-p" style="font-size:1.3rem;color:white;margin-left:.4rem;font-family:'Times New Roman', Times, serif">It is very popular among younger hearts for the classic, elegant and timeless appeal of these exquisite fragrances. A Non- allergenic Fragrance that doesn’t affects your skin.</p>
+          </div>
+
+        <div style="margin-left:67%;margin-top:.5%;border:1px #e9dcde solid;
+        border-radius: 1rem;width: 26.1%;height:53.2rem;  border-top-right-radius: 1rem;border-top-left-radius: 1rem;"">
+            <img class="product3-img" src="perfumes\men24.jpg"  alt="product-img">  
+          <table>
+            <tr><td><h2 class="column3-h2" style="text-align:left;font-family:'Mate SC', serif">beardo</h2></td>
+              <td><h4 style="margin-top:.7rem;margin-left:1rem;text-align:left;font-family:'Mate SC', serif">(100ml)</h4></td>
+            </tr>
+            
+            <tr>
+            <td><h3 class="column3-h3"  style="text-align:left;font-family:'Times New Roman', Times, serif">Godfather Perfume</h3></td>
+            <td><h3 class="column3-h3" style="margin-left:1rem;font-size:2.3rem;margin-top:-.7rem; ">₹645</h3></td>
+         </tr></table>
+          
+         <table class="buy-now-table"><tr><td>
+      
+          <form action="/buyerdetails" method="GET">
+            <button class="column3-button" style="background:transparent;border:0;box-shadow: 0 0 ;" name="productID" value="23" ><img class="buynow-button" src="https://dabuttonfactory.com/button.png?t=Buy+now&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=50&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" alt="Buy Now" /></button> 
+          </form>
+      
+            </td>
+            </tr></table>
+             <tr> <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+              <input type="hidden" name="cmd" value="_s-xclick">
+              <input type="hidden" name="hosted_button_id" value="EBF3A4Z9LGY68">
+              <table>
+                <tr><td><input class="product-volume" type="hidden"  name="on0" ></td></tr><tr><td><select style="display:none" name="os0">
+                <option value="Option 1">Option 1 &#8377;645.00 INR</option>
+               
+              </select> </td></tr>
+              </table>
+              <input type="hidden" name="currency_code" value="INR">
+              <input type="image" style="margin-top:-4.3rem;border:0;" class="add-to-cart-button" src="https://dabuttonfactory.com/button.png?t=Add+to+Cart&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=32&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+              <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+              </form>
+      
+            <p class="column3-p" style="font-size:1.3rem;color:white;margin-left:.4rem;font-family:'Times New Roman', Times, serif">A premium perfume that has a strong and masculine fragrance that lasts longer than other perfumes.</p>
+          </div>
+
+
+
+          <% allProduct.forEach(element => { %>
+           
+        <div class="column">
+
+             
+
+                <img class="product-img" src="<%=element.img%>"  alt="product-img">  
+                <table>
+                  <tr><td><h2 style="text-align:left;font-family:'Mate SC', serif"><%=element.brand%></h2></td>
+                    <td><h4 style="margin-top:.7rem;margin-left:1rem;text-align:left;font-family:'Mate SC', serif">(<%=element.quantity%>)</h4></td>
+                  </tr>
+                  
+                  <tr>
+                  <td><h3  style="text-align:left;font-family:'Times New Roman', Times, serif"><%=element.name%></h3></td>
+                  <td><h3  style="margin-left:1rem;font-size:2.3rem;margin-top:-.7rem; ">₹<%=element.price%></h3></td>
+               </tr></table>
+                
+               <table class="buy-now-table"><tr><td>
+    
+                <form action="/buyerdetails" method="GET">
+                  <button style="background:transparent;border:0;box-shadow: 0 0 ;" name="productID" value="<%=element.id%>" ><img class="buynow-button" src="https://dabuttonfactory.com/button.png?t=Buy+now&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=50&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" alt="Buy Now" /></button> 
+                </form>
+    
+                  </td>
+                  </tr></table>
+                   <tr>
+                    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+                      <input type="hidden" name="cmd" value="_s-xclick">
+                      <input type="hidden" name="hosted_button_id" value="HUQW8VRX3AKUW">
+                      <table>
+                        <tr><td><input class="product-volume" type="hidden"  name="on0" ></td></tr><tr><td><select style="display:none" name="os0">
+                        <option value="Option 1">Option 1 &#8377;219.00 INR</option>
+                        
+                      </select> </td></tr>
+                      </table>
+                      <input type="hidden" name="currency_code" value="INR">
+                      <input type="image" style="margin-top:-4.3rem;border:0;" class="add-to-cart-button" src="https://dabuttonfactory.com/button.png?t=Add+to+Cart&f=Open+Sans-Bold&ts=27&tc=09342c&tshs=1&tshc=000&hp=32&vp=16&c=11&bgt=gradient&bgc=ff0003&ebgc=ff3335&be=1&bs=1&bc=569&shs=1&shc=444&sho=se" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                      <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                      </form>
+    
+                    
+      
+                  <p style="font-size:1.3rem;color:white;margin-left:.4rem;font-family:'Times New Roman', Times, serif"><%=element.description%></p>
+    
+                </div>
+  
+        <%});%>
+      
+    </div>
+      </div>
+      
+    
+    <%- include("partials/footer")-%>
+    

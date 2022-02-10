@@ -1,0 +1,40 @@
+<%- include("partials/header")-%>
+<a href="/product"><button class="success-productbutton" >Products</button></a>
+<div class="success-box">
+  <h1 style="color:#ffffff;margin-left:25%;">Order placed </h1>
+  <h3 style="color:#ffffff;margin-left:25%;">you have ordered </h3>
+  <div id="success" >
+    <table id="t01" class="borderdesign" style="width:60%">
+      <tr>
+        <th class="borderdesign borderdesign-td"><h2>Product</h2></th>
+        <th class="borderdesign borderdesign-td"><h2>Name</h2></th> 
+        <th class="borderdesign borderdesign-td"><h2>Price</h2></th>
+        <th class="borderdesign borderdesign-td" colspan="2"><h2 >Shipping Address</h2></th>
+
+      </tr>
+      <tr>
+        <td class="borderdesign borderdesign-td"><img style="height:25rem;width:21rem;background:transparent" src="<%=product.img%>" alt="ordered-product" /></td>
+        <td class="borderdesign borderdesign-td"><h2><%=product.name%></h2></td>
+        <td class="borderdesign borderdesign-td"><h2>₹<%=product.price%></h2></td>
+        <td class="borderdesign borderdesign-td">
+          <div class="shipping">
+            
+            <h4><%=buyername%></h4><br>
+            <h4><%=buyeremail%></h4>
+            <h4><%=buyeraddress%></h4><br>
+            <h4><%=buyertown%></h4><br>
+            <h4><%=buyerstate%></h4><br>
+            <h4><%=buyerpin%></h4><br>
+            <h4><%=buyerphone%></h4><br>
+           </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+ 
+  
+
+  
+</div>
+
+<%- include("partials/footer")-%>

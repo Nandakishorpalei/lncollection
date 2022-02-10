@@ -1,0 +1,31 @@
+<%-include("partials/header") -%>
+<div >
+  <button type="submit" class="input-box-content razorpay-conitnue" id="rzp-button1">continue</button>
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script>
+    axios.post("/order").then((info)=>{
+      console.log(info)
+      
+      var options = {
+    "key": "rzp_test_OCFkLvsuMn0Hgf", // Enter the Key ID generated from the Dashboard
+
+    "name": "CB2 - clone",
+    "description": "Test Transaction",
+    "image": "https://example.com/your_logohttps://images-na.ssl-images-amazon.com/images/I/51uPO%2BnKRFL._SL1000_.jpg",
+    "order_id": info.data.id, 
+    "callback_url": "http://localhost:3000/razorpaysuccess",
+    "theme":{
+      "color":"#3399cc" 
+    }
+      
+    };
+    var rzp1 = new Razorpay(options);
+document.getElementById('rzp-button1').onclick = function(e){
+    rzp1.open();
+    e.preventDefault();
+}
+    })
+  </script>
+<%-include("partials/footer") -%>
